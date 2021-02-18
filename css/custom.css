@@ -1,0 +1,60 @@
+
+button {
+  /* margin-left: 280px; */
+  position: relative;
+  left: 50px;
+  padding: 15px;
+  font-size: 25px;
+  margin-top: 40px;
+}
+.flag {
+  background-color: #03297b;
+  height: 800px;
+  width: 1500px;
+}
+.union-jack{
+  position: absolute;
+  height: 400px;
+  width: 650px;
+}
+.fa-star {
+  color: #cd192f;
+  -webkit-text-stroke-width:4px;
+-webkit-text-stroke-color:#fefefe;
+}
+
+.star-one {
+  font-size: 80px;
+  position: absolute;
+  top: 150px;
+  left: 1000px;
+}
+
+.star-two {
+  font-size: 80px;
+  position: absolute;
+  top: 330px;
+  left: 850px;
+}
+
+.star-three {
+  position: absolute;
+  font-size: 90px;
+  top: 560px;
+  left: 1000px;
+}
+
+.star-four {
+  font-size: 65px;
+  position: absolute;
+  top: 300px;
+  left: 1150px;
+}
+
+.flag-pole {
+  position: absolute;
+  height: 2000px;
+  width:30px;
+  background-color: black;
+  z-index: 999;
+}

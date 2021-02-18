@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- custom css always comes last in workflow -->
+</head>
+<body>
+  <div class="flag-pole">
+
+  </div>
+  <div class="flag" id="flag">
+    <img src="img/image.png" class="union-jack" alt="">
+<i class="fa fa-star star-one" aria-hidden="true"></i>
+<i class="fa fa-star star-two" aria-hidden="true"></i>
+<i class="fa fa-star star-three" aria-hidden="true"></i>
+<i class="fa fa-star star-four" aria-hidden="true"></i>
+  </div>
+
+  <button id="trigger">Play Anthem</button>
+<!-- flag ends -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+
+// wait until the doc is ready
+  $(document).ready(function(){
+
+      $('#trigger').click(function(){
+
+          // $('.fa-star').hide(4000);
+          var audio = new Audio('music/anthem.mp3');
+          audio.play();
+});
+    // click function ends
+    });
+    // document.ready ends
+  </script>
+</body>
+</html>
