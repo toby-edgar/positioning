@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  html {
+    height: 8000px;
+  }
+.block {
+  height: 200px;
+  width: 500px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.static {
+  background-color: rgb(99, 184, 195);
+}
+
+.absolute {
+  position: absolute;
+  top: 10px;
+  right: 200px;
+  background-color: rgb(219, 228, 45);
+}
+
+.fixed {
+  background-color: #992bd4;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.relative {
+  background-color: #54e947;
+  position: relative;
+  left: 400px;
+  top: 50px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="block static">
+<h4>static</h4>
+<p>default positioning</p>
+<p>static is the default positioning, you do not need to add static property for and element to be static.</p>
+    </div>
+
+  <div class="block absolute">
+    <h4>absolute</h4>
+    <p>i am positioned to the viewport or window</p>
+    <p>absolute pulls the element from the viewport and will overlay all other elements</p>
+  </div>
+
+
+  <div class="block fixed">
+    <h4>fixed</h4>
+    <p>even if you scroll, i am positioned relative to the accesskey="viewport or window"</p>
+    <p>fixed will also pull the element from the viewport anf the element with stay where it is even when scrolling</p>
+  </div>
+
+  <div class="block relative">
+    <h4>relative</h4>
+    <p>i am positioned relative to where i am usually placed</p>
+    <p>relative allows you to move the element but the values will move it from where it normally sits</p>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+</html>
